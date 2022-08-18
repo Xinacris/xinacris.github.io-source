@@ -1,11 +1,12 @@
-<div class="dashboardContents">
+<div class="dashboardContents" *ngFor="let post of posts">
   <img src="../../assets/pp.png" alt="" class="dashboardImage" />
-  <h2>Mustafa Ali Eren</h2>
-  <h4>Front-end Developer - Gamer</h4>
-  <br>
+  <h2>{{ post.name }}</h2>
+  <h4>{{ post.bio }}</h4>
+  <h5>{{ post.location }}</h5>
   <p>
     Welcome to my website. <br />
-    I like to gaming, coding and cooking. <br>
-    My username is Xinacris, you can find me anywhere you like if you want to talk to me.
+    I like to gaming, coding and cooking. <br />
+    My username is {{ post.login }}, you can find me anywhere you like if you
+    want to talk to me.
   </p>
 </div>

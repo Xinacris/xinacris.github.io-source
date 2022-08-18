@@ -8,13 +8,23 @@ import { AboutComponent } from './about/about.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FooterComponent } from './footer/footer.component';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, AboutComponent, ExperienceComponent, DashboardComponent, FooterComponent],
-  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    AboutComponent,
+    ExperienceComponent,
+    DashboardComponent,
+    FooterComponent,
+  ],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    AppRoutingModule,
+    FontAwesomeModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {
-
-}
+export class AppModule {}
