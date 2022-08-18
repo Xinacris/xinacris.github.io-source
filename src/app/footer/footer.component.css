@@ -1,0 +1,18 @@
+.footerBot {
+  margin-top: 0.5rem;
+  position: fixed;
+  width: 100%;
+  bottom: -1.5rem;
+  left: 0;
+  background-color: #212529;
+  height: auto !important;
+}
+
+@media only screen and (max-width: 992px) {
+  .footerBot {
+    position: absolute;
+    bottom: 0 !important;
+    height: 6.06rem;
+    margin-bottom: 0 !important;
+  }
+}

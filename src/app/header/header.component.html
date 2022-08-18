@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark text-uppercase">
+  <div class="navbarClass">
+    <a class="navbar-brand" routerLink="">Mustafa Ali Eren</a>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" routerLink="about">About Me</a>
+        <a class="nav-item nav-link" routerLink="experience">Experiences</a>
+        <a class="nav-item nav-link" routerLink="blog">Blog</a>
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-dark hideButton" (click)="showMenu()">Menu</button>
+  <div class="hidden navbar-nav" *ngIf="isHidden">
+    <a class="nav-item nav-link" routerLink="about" *ngIf="isHidden"
+      >About Me</a
+    >
+    <a class="nav-item nav-link" routerLink="experience" *ngIf="isHidden"
+      >Experiences</a
+    >
+    <a class="nav-item nav-link" routerLink="blog" *ngIf="isHidden">Blog</a>
+  </div>
+</nav>

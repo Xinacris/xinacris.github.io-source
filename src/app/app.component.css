@@ -1,0 +1,20 @@
+.centerAlign {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (max-width: 992px) {
+  .right {
+    right: 0%;
+  }
+}
+.content {
+  padding-bottom: 6.06rem;
+}
+.containerContent {
+  width: 100%;
+  position: relative;
+  min-height: 100vh;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}

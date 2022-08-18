@@ -1,0 +1,28 @@
+.bg-dark {
+  background-color: #212529 !important;
+}
+.navbarClass {
+  display: flex;
+  padding: 0.4rem;
+  font-weight: 400;
+}
+.hideButton{
+  right: 1rem;
+  position: relative;
+}
+.hidden{
+  position:relative;
+  background-color: #212529;
+  text-align: right;
+  float: right;
+}
+@media only screen and (min-width: 992px) {
+  .hideButton{
+    display: none;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .hideButton{
+    display: block;
+  }
+}

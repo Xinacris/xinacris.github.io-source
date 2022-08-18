@@ -1,0 +1,17 @@
+.dashboardContents{
+  text-align: center;
+  color: white;
+  padding-top: 1rem;
+}
+.dashboardImage{
+  padding-bottom: 1rem;
+}
+@media only screen and (max-width: 992px) {
+  .dashboardImage{
+    width: 50%;
+  }
+}
+inputSquare{
+  width: 1;
+  height: 1;
+}
