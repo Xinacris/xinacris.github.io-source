@@ -8,13 +8,11 @@
       </div>
     </div>
   </div>
-  <button class="btn btn-dark hideButton" (click)="showMenu()">Menu</button>
+  <button class="btn btn-dark hideButton" (click)="showMenu()"><span class="material-symbols-outlined">
+      menu
+    </span></button>
   <div class="hidden navbar-nav" *ngIf="isHidden">
-    <a class="nav-item nav-link" routerLink="about" *ngIf="isHidden"
-      >About Me</a
-    >
-    <a class="nav-item nav-link" routerLink="experience" *ngIf="isHidden"
-      >Experiences</a
-    >
+    <a class="nav-item nav-link" routerLink="about" *ngIf="isHidden" (click)="showMenu()">About Me</a>
+    <a class="nav-item nav-link" routerLink="experience" *ngIf="isHidden" (click)="showMenu()">Experiences</a>
   </div>
 </nav>

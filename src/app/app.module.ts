@@ -9,6 +9,7 @@ import { ExperienceComponent } from './experience/experience.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
+import { NgxGoogleAnalyticsModule, NgxGoogleAnalyticsRouterModule } from 'ngx-google-analytics';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +24,8 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule,
     AppRoutingModule,
     FontAwesomeModule,
+    NgxGoogleAnalyticsModule.forRoot('G-V4T9Z1Z436'),
+    NgxGoogleAnalyticsRouterModule
   ],
   providers: [],
   bootstrap: [AppComponent],

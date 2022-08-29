@@ -1,0 +1,10 @@
+{
+  "skills": [
+    { "name": "Angular", "skillPoint": "3" },
+    { "name": "TypeScript", "skillPoint": "2" },
+    { "name": "HTML/CSS", "skillPoint": "4" },
+    { "name": "Bootstrap", "skillPoint": "4" },
+    { "name": "Python", "skillPoint": "2" },
+    { "name": "C#", "skillPoint": "3" }
+  ]
+}

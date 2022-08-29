@@ -1,12 +1,18 @@
 <div class="dashboardContents" *ngFor="let post of posts">
-  <img src="../../assets/pp.png" alt="" class="dashboardImage" />
-  <h2>{{ post.name }}</h2>
-  <h4>{{ post.bio }}</h4>
-  <h5>{{ post.location }}</h5>
-  <p>
-    Welcome to my website. <br />
-    I like to gaming, coding and cooking. <br />
-    My username is {{ post.login }}, you can find me anywhere you like if you
-    want to talk to me.
-  </p>
+  <div class="dashboardBox">
+    <img src="../../assets/pp.png" alt="" class="dashboardImage" />
+    <div class="dashboardText">
+      <h2>{{ post.name }}</h2>
+      <h4>{{ post.bio }}</h4>
+      <h5>{{ post.location }}</h5>
+      <p>
+        Welcome to my website. <br />
+        I like to gaming, coding and cooking. <br />
+        My username is {{ post.login }}, you can find me anywhere you like if you
+        want to talk to me.
+      </p>
+      <hr>
+      <a href="twitter.com/zehirlibrowni" target="_blank">twitter.com/zehirlibrowni</a>
+    </div>
+  </div>
 </div>

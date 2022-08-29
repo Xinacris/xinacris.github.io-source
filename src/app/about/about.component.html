@@ -10,68 +10,58 @@
   </p>
   <h5>Skills</h5>
   <table>
-    <tr>
-      <td>Angular</td>
-      <td class="skillPoints">
-        <fa-icon [icon]="faCircleSolid" class="faIcons" size="lg"></fa-icon>
-        <fa-icon [icon]="faCircleSolid" class="faIcons" size="lg"></fa-icon>
-        <fa-icon [icon]="faCircleSolid" class="faIcons" size="lg"></fa-icon>
-        <fa-icon [icon]="faCircle" class="faIcons" size="lg"></fa-icon>
-        <fa-icon [icon]="faCircle" class="faIcons" size="lg"></fa-icon>
+    <tr *ngFor="let skill of skillPoints[0].skills">
+      <td>{{skill.name}}
       </td>
-    </tr>
-    <tr>
-      <td>TypeScript</td>
       <td class="skillPoints">
-        <fa-icon [icon]="faCircleSolid" class="faIcons" size="lg"></fa-icon>
-        <fa-icon [icon]="faCircleSolid" class="faIcons" size="lg"></fa-icon>
-        <fa-icon [icon]="faCircle" class="faIcons" size="lg"></fa-icon>
-        <fa-icon [icon]="faCircle" class="faIcons" size="lg"></fa-icon>
-        <fa-icon [icon]="faCircle" class="faIcons" size="lg"></fa-icon>
+        <div *ngIf="skill.skillPoint=='0'">
+          <fa-icon [icon]="faCircle" class="faIcons" size="lg"></fa-icon>
+          <fa-icon [icon]="faCircle" class="faIcons" size="lg"></fa-icon>
+          <fa-icon [icon]="faCircle" class="faIcons" size="lg"></fa-icon>
+          <fa-icon [icon]="faCircle" class="faIcons" size="lg"></fa-icon>
+          <fa-icon [icon]="faCircle" class="faIcons" size="lg"></fa-icon>
+        </div>
+        <div *ngIf="skill.skillPoint=='1'">
+          <fa-icon [icon]="faCircleSolid" class="faIcons" size="lg"></fa-icon>
+          <fa-icon [icon]="faCircle" class="faIcons" size="lg"></fa-icon>
+          <fa-icon [icon]="faCircle" class="faIcons" size="lg"></fa-icon>
+          <fa-icon [icon]="faCircle" class="faIcons" size="lg"></fa-icon>
+          <fa-icon [icon]="faCircle" class="faIcons" size="lg"></fa-icon>
+        </div>
+        <div *ngIf="skill.skillPoint=='2'">
+          <fa-icon [icon]="faCircleSolid" class="faIcons" size="lg"></fa-icon>
+          <fa-icon [icon]="faCircleSolid" class="faIcons" size="lg"></fa-icon>
+          <fa-icon [icon]="faCircle" class="faIcons" size="lg"></fa-icon>
+          <fa-icon [icon]="faCircle" class="faIcons" size="lg"></fa-icon>
+          <fa-icon [icon]="faCircle" class="faIcons" size="lg"></fa-icon>
+        </div>
+        <div *ngIf="skill.skillPoint=='3'">
+          <fa-icon [icon]="faCircleSolid" class="faIcons" size="lg"></fa-icon>
+          <fa-icon [icon]="faCircleSolid" class="faIcons" size="lg"></fa-icon>
+          <fa-icon [icon]="faCircleSolid" class="faIcons" size="lg"></fa-icon>
+          <fa-icon [icon]="faCircle" class="faIcons" size="lg"></fa-icon>
+          <fa-icon [icon]="faCircle" class="faIcons" size="lg"></fa-icon>
+        </div>
+        <div *ngIf="skill.skillPoint=='4'">
+          <fa-icon [icon]="faCircleSolid" class="faIcons" size="lg"></fa-icon>
+          <fa-icon [icon]="faCircleSolid" class="faIcons" size="lg"></fa-icon>
+          <fa-icon [icon]="faCircleSolid" class="faIcons" size="lg"></fa-icon>
+          <fa-icon [icon]="faCircleSolid" class="faIcons" size="lg"></fa-icon>
+          <fa-icon [icon]="faCircle" class="faIcons" size="lg"></fa-icon>
+        </div>
+        <div *ngIf="skill.skillPoint=='5'">
+          <fa-icon [icon]="faCircleSolid" class="faIcons" size="lg"></fa-icon>
+          <fa-icon [icon]="faCircleSolid" class="faIcons" size="lg"></fa-icon>
+          <fa-icon [icon]="faCircleSolid" class="faIcons" size="lg"></fa-icon>
+          <fa-icon [icon]="faCircleSolid" class="faIcons" size="lg"></fa-icon>
+          <fa-icon [icon]="faCircleSolid" class="faIcons" size="lg"></fa-icon>
+        </div>
       </td>
-    </tr>
-    <tr>
-      <td>HTML/CSS</td>
-      <td class="skillPoints">
-        <fa-icon [icon]="faCircleSolid" class="faIcons" size="lg"></fa-icon>
-        <fa-icon [icon]="faCircleSolid" class="faIcons" size="lg"></fa-icon>
-        <fa-icon [icon]="faCircleSolid" class="faIcons" size="lg"></fa-icon>
-        <fa-icon [icon]="faCircleSolid" class="faIcons" size="lg"></fa-icon>
-        <fa-icon [icon]="faCircle" class="faIcons" size="lg"></fa-icon>
-      </td>
-    </tr>
-    <tr>
-      <td>C#</td>
-      <td class="skillPoints">
-        <fa-icon [icon]="faCircleSolid" class="faIcons" size="lg"></fa-icon>
-        <fa-icon [icon]="faCircleSolid" class="faIcons" size="lg"></fa-icon>
-        <fa-icon [icon]="faCircle" class="faIcons" size="lg"></fa-icon>
-        <fa-icon [icon]="faCircle" class="faIcons" size="lg"></fa-icon>
-        <fa-icon [icon]="faCircle" class="faIcons" size="lg"></fa-icon>
-      </td>
-    </tr>
-    <tr>
-      <td>Bootstrap</td>
-      <td class="skillPoints">
-        <fa-icon [icon]="faCircleSolid" class="faIcons" size="lg"></fa-icon>
-        <fa-icon [icon]="faCircleSolid" class="faIcons" size="lg"></fa-icon>
-        <fa-icon [icon]="faCircleSolid" class="faIcons" size="lg"></fa-icon>
-        <fa-icon [icon]="faCircleSolid" class="faIcons" size="lg"></fa-icon>
-        <fa-icon [icon]="faCircle" class="faIcons" size="lg"></fa-icon>
-      </td>
-    </tr>
-    <tr>
-      <td>Python</td>
-      <td class="skillPoints">
-        <fa-icon [icon]="faCircleSolid" class="faIcons" size="lg"></fa-icon>
-        <fa-icon [icon]="faCircleSolid" class="faIcons" size="lg"></fa-icon>
-        <fa-icon [icon]="faCircle" class="faIcons" size="lg"></fa-icon>
-        <fa-icon [icon]="faCircle" class="faIcons" size="lg"></fa-icon>
-        <fa-icon [icon]="faCircle" class="faIcons" size="lg"></fa-icon>
-      </td>
+
     </tr>
   </table>
   <p>
-    If you want to check out what I did make, you can go to my <a href="https://github.com/xinacris" target="_blank">Github</a>.
+    If you want to check out what I did make, you can go to my <a href="https://github.com/xinacris"
+      target="_blank">Github</a>.
   </p>
 </div>

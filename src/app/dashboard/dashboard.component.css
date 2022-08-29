@@ -1,17 +1,51 @@
-.dashboardContents{
+.dashboardContents {
   text-align: center;
+  width: 100%;
+  height: 100%;
   color: white;
   padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
 }
-.dashboardImage{
-  padding-bottom: 1rem;
+.dashboardText{
+  padding-top: 0.5rem;
 }
 @media only screen and (max-width: 992px) {
-  .dashboardImage{
-    width: 50%;
+  .dashboardImage {
+    width: 55%;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    float: center !important;
+  }
+  .dashboardBox {
+    width: 75% !important;
+    padding:2px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
-inputSquare{
-  width: 1;
-  height: 1;
+@media only screen and (min-width: 600px) {
+  .dashboardImage {
+    margin-top: 1rem;
+    padding-bottom: 0;
+    width: 25%;
+    float: left;
+  }
+  .dashboardBox {
+    margin-top: 11%;
+  }
+
 }
+.dashboardBox {
+
+  width: 50%;
+  float: center;
+  background-color: white;
+  color: black;
+  border-radius: 25px;
+
+}
+
+
