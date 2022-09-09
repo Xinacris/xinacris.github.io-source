@@ -7,15 +7,10 @@
       <th>Position</th>
       <th>Time</th>
     </tr>
-    <tr class="expTable">
-      <td>Migros</td>
-      <td>Front-End Developer Intern</td>
-      <td>July 2022 - August 2022</td>
-    </tr>
-    <tr class="expTable">
-      <td>MNG Kargo</td>
-      <td>Developer Intern</td>
-      <td>August 2022 - September 2022</td>
+    <tr class="expTable" *ngFor="let xp of experiences[0].experiences">
+      <td>{{xp.name}}</td>
+      <td>{{xp.position}}</td>
+      <td>{{xp.time}}</td>
     </tr>
   </table>
 </div>
