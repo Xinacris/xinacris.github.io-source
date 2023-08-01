@@ -1,14 +1,24 @@
 {
   "experiences": [
     {
-      "name": "Migros Ticaret AŞ",
-      "position": "Front-end Developer Intern",
-      "time": "July 2022-August 2022"
+      "name": "Papara",
+      "position": "Software Engineer (Frontend Developer)",
+      "time": "August 2023 - Currently"
+    },
+    {
+      "name": "Papara",
+      "position": "Software Engineer Intern (Frontend Developer)",
+      "time": "November 2022-August 2023"
     },
     {
       "name": "MNG Kargo",
       "position": "Developer Intern",
       "time": "August 2022-September 2022"
+    },
+    {
+      "name": "Migros Ticaret AŞ",
+      "position": "Front-end Developer Intern",
+      "time": "July 2022-August 2022"
     }
   ]
 }
