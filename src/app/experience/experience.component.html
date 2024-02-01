@@ -1,6 +1,11 @@
 <div class="expContent">
   <h5>Experiences</h5>
-  <p>I have not much of experience right now, but I'm trying to.</p>
+  <p>
+    Front-end Developer here, rocking React, Angular, and Next.js. Started with
+    a cool summer internship, landed at my current spot, and went from intern to
+    Frontend Developer. No fancy personal website yet, just a coding enthusiast
+    with a good sense of humor!
+  </p>
   <table>
     <tr>
       <th>Company</th>
@@ -8,9 +13,9 @@
       <th>Time</th>
     </tr>
     <tr class="expTable" *ngFor="let xp of experiences[0].experiences">
-      <td>{{xp.name}}</td>
-      <td>{{xp.position}}</td>
-      <td>{{xp.time}}</td>
+      <td>{{ xp.name }}</td>
+      <td>{{ xp.position }}</td>
+      <td>{{ xp.time }}</td>
     </tr>
   </table>
 </div>
